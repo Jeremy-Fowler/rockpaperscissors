@@ -3,7 +3,9 @@
 // scissors=2
 
 const GAME_RESULTS = document.getElementById("gameResults")
-
+function changePicture(){
+    
+}
 function getComputerChoice(){
     let num = Math.floor(Math.random() * 3)
     return(num)
@@ -19,10 +21,12 @@ function play(playerChoice){
     }
     if (playerChoice === "rock" && computerChoice == 1){    
         console.log("YOU LOSE")
+        document.getElementById("gameResults").innerText="YOU LOSE"
         return "YOU LOSE"
     }
     if (playerChoice === "rock" && computerChoice == 2){    
         console.log("YOU WIN")
+        document.getElementById("gameResults").innerText="YOU WIN"
         return "YOU WIN"
     }
 
@@ -34,10 +38,12 @@ function play(playerChoice){
     }
     if (playerChoice === "paper" && computerChoice == 2){    
         console.log("YOU LOSE")
+        document.getElementById("gameResults").innerText="YOU LOSE"
         return "YOU LOSE"
     }
     if (playerChoice === "paper" && computerChoice == 0){    
         console.log("YOU WIN")
+        document.getElementById("gameResults").innerText="YOU WIN"
         return "YOU WIN"
     }
 
@@ -45,15 +51,17 @@ function play(playerChoice){
     if (playerChoice === "scissors" && computerChoice == 2){    
         console.log("DRAW GAME")
         document.getElementById("gameResults").innerText="DRAW GAME"
-        alert("DRAW GAME")
+        return "DRAW GAME"
     }
     if (playerChoice === "scissors" && computerChoice == 0){    
         console.log("YOU LOSE")
-        alert("YOU LOSE")
+        document.getElementById("gameResults").innerText="YOU LOSE"
+        return "YOU LOSE"
     }
     if (playerChoice === "scissors" && computerChoice == 1){    
         console.log("YOU WIN")
-        alert("YOU WIN");
+        document.getElementById("gameResults").innerText="YOU WIN"
+        return "YOU WIN";
     }
 
 }
