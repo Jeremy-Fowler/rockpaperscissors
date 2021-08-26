@@ -24,11 +24,11 @@
             <!-- player interface -->
             <div class="col-md-5 d-flex justify-content-center">
                 <div class="card shadow">
-                    <img src="//placehold.it/200x200" alt="uh oh">
+                    <img src="//placehold.it/200x200" alt="uh oh" id="mainImage">
                     <div class="card-body d-flex justify-content-between">
-                        <button id="rock button" class="bg-primary btn text-white" onclick="play('rock')">ROCK</button>
-                        <button id="paper button" class="bg-primary btn text-white" onclick="play('paper')">PAPER</button>
-                        <button id="scissor button" class="bg-primary btn text-white" onclick="play('scissors')">SCISSORS</button>
+                        <button class="bg-primary btn text-white" onclick="play('rock'); imageRock()">ROCK</button>
+                        <button class="bg-primary btn text-white" onclick="play('paper'); imagePaper()">PAPER</button>
+                        <button class="bg-primary btn text-white" onclick="play('scissors'); imageScissors()">SCISSORS</button>
                     </div>
                 </div>
             </div>
@@ -40,7 +40,7 @@
                 <div class="card shadow">
                     <img src="//placehold.it/200x200" alt="">
                     <div class="card-body">
-                        <h3 class="text-center">COMPUTER</h3>
+                        <h3 class="text-center">CPU</h3>
                     </div>
                 </div>
             </div>

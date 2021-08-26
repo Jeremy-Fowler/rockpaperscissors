@@ -10,6 +10,14 @@ function getComputerChoice(){
     let num = Math.floor(Math.random() * 3)
     return(num)
 }
+
+function imagerock(){
+    if (document.getElementById("mainImage").src != "https://cseweb.ucsd.edu//~bcipolli/docs/posters/SfN2015/2015/images/the-rock-eyebrow-mirror.jpg"){
+        document.getElementById("mainImage").src =  "https://cseweb.ucsd.edu//~bcipolli/docs/posters/SfN2015/2015/images/the-rock-eyebrow-mirror.jpg"
+    }
+}
+
+
 function play(playerChoice){
     let computerChoice = getComputerChoice() 
 
